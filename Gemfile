@@ -41,6 +41,7 @@ gem 'unicorn'
 # Geospatial gems
 gem 'rdoc'
 gem 'activerecord-postgis-adapter'
+gem 'leaflet-rails'
 
 group :development, :test do
   gem 'better_errors'
