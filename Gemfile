@@ -38,6 +38,9 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use Gon to access variables in js in views
+gem 'gon'
+
 # Geospatial gems
 gem 'rgeo'
 gem 'rgeo-geojson'

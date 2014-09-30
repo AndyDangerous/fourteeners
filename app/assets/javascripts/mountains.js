@@ -1,6 +1,7 @@
-for ( var i=0; i < mounatins.length; ++i )
-{
-   L.marker( [mountain[i].lat, mountain[i].lng] )
-      .bindPopup( '<a href="' + mountain[i].url + '" target="_blank">' + mountain[i].name + '</a>' )
-      .addTo( map );
-}
+// var mountains = gon.mountains
+// for ( var i=0; i < mountains.length; ++i )
+// {
+//    L.marker( [mountains[i].lat, mountains[i].lon] )
+//       .bindPopup( '<a href="' + mountains[i].url + '" target="_blank">' + mountains[i].name + '</a>' )
+//       .addTo( map );
+// }

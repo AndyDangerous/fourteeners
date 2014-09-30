@@ -4,9 +4,16 @@ class LocationsController < ApplicationController
   def index
     locations = Location.all
 
-    @locations = locations.map do |location|
-      RGeo::GeoJSON.encode(location.latlon, :json_parser => :json)
+    factory = RGeo::GeoJSON::EntityFactory.instance
+    # feature = factory.feature(location.latlon)
+
+    gon.mountains = locations.map do |location|
+      RGeo::GeoJSON.encode(factory.feature(location.latlon))
     end
+
+    # gon.mountains = locations.map do |location|
+    #   RGeo::GeoJSON.encode(location.latlon, :json_parser => :json)
+    # end
 
     respond_to do |format|
       format.html # index.html.erb

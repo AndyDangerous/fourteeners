@@ -8,11 +8,13 @@ $ ->
       subdomains: ['otile1','otile2','otile3','otile4'],
       maxZoom: 18
   }).addTo(map)
-  for location in $(".locations")
-    $location = $(location)
-    lat = $location.latlon("latitude")
-    lon = $location.latlon("longitude")
-    name = $location.data("name")
-    details = $location.data("details")
-    marker = L.marker([lat, lon]).addTo(map)
-    marker.bindPopup("<b>#{name}</b><br>#{details}")
+  fourteeners = L.geoJson().addTo(map);
+  for location in gon.mountains
+    # $location = $(location)
+    # lat = $location.geometry.coordinates(1)
+    # lon = $location.geometry.coordinates("0")
+    # name = $location.data("name")
+    # details = $location.data("details")
+    fourteeners.addData(location);
+    # marker = L.marker([lat, lon]).addTo(map)
+    # marker.bindPopup("<b>#{name}</b><br>#{details}")
