@@ -2,7 +2,11 @@ class LocationsController < ApplicationController
     # GET /locations
   # GET /locations.json
   def index
-    @locations = Location.all
+    locations = Location.all
+
+    @locations = locations.map do |location|
+      RGeo::GeoJSON.encode(location.latlon, :json_parser => :json)
+    end
 
     respond_to do |format|
       format.html # index.html.erb

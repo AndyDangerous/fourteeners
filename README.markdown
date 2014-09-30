@@ -10,6 +10,12 @@ This project is a proof-of-concept and a test to see about getting a rails-backe
 In the future:
 [ ] add in functionality to make shit cooler and/or interactive
 
+
+Resources:
+* http://powderlin.es/api.html
+* https://github.com/firstchair-io/snotel
+* http://www.wcc.nrcs.usda.gov/snow/
+
 == README
 
 This README would normally document whatever steps are necessary to get the
