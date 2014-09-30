@@ -39,11 +39,13 @@ gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
 # Geospatial gems
-gem 'rdoc'
+gem 'rgeo'
+gem 'rgeo-geojson'
 gem 'activerecord-postgis-adapter'
-gem 'leaflet-rails'
+gem 'leaflet-rails', github: "axyjo/leaflet-rails"
 
 group :development, :test do
+  gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller'
 end

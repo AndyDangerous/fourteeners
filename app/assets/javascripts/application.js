@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require leaflet
 //= require turbolinks
+//= require location
 //= require_tree .
