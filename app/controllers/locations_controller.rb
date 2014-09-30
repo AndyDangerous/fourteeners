@@ -8,7 +8,7 @@ class LocationsController < ApplicationController
     # feature = factory.feature(location.latlon)
 
     gon.mountains = locations.map do |location|
-      RGeo::GeoJSON.encode(factory.feature(location.latlon))
+      RGeo::GeoJSON.encode(factory.feature(location.latlon, nil, {name: "#{location.name}"}))
     end
 
     # gon.mountains = locations.map do |location|
