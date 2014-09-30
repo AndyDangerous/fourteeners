@@ -9,12 +9,20 @@ $ ->
       maxZoom: 18
   }).addTo(map)
   fourteeners = L.geoJson().addTo(map);
+  markers = new L.MarkerClusterGroup();
   for location in gon.mountains
     # $location = $(location)
     # lat = $location.geometry.coordinates(1)
     # lon = $location.geometry.coordinates("0")
     # name = $location.data("name")
     # details = $location.data("details")
-    fourteeners.addData(location);
+    # fourteeners.addData(location);
+    markers.addLayer(new L.Marker(location));
     # marker = L.marker([lat, lon]).addTo(map)
     # marker.bindPopup("<b>#{name}</b><br>#{details}")
+  map.addLayer(markers)
+
+# var markers = new L.MarkerClusterGroup();
+# markers.addLayer(new L.Marker(getRandomLatLng(map)));
+# ... Add more layers ...
+# map.addLayer(markers);

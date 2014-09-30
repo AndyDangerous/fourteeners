@@ -46,9 +46,14 @@ gem 'rgeo'
 gem 'rgeo-geojson'
 gem 'activerecord-postgis-adapter'
 gem 'leaflet-rails', github: "axyjo/leaflet-rails"
+gem 'leaflet-markercluster-rails'
+
+# Snow Gems
+gem 'snotel'
 
 group :development, :test do
   gem 'pry'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'seed-dump'
 end

@@ -15,4 +15,5 @@
 //= require leaflet
 //= require turbolinks
 //= require location
+//= require /bower_components/*
 //= require_tree .

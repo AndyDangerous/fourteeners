@@ -12,9 +12,13 @@ In the future:
 
 
 Resources:
+* SNOW:
 * http://powderlin.es/api.html
 * https://github.com/firstchair-io/snotel
 * http://www.wcc.nrcs.usda.gov/snow/
+
+* JAVASCTIPT:
+* http://joelencioni.com/blog/2014/01/03/integrating-bower-with-rails/
 
 == README
 
